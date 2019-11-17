@@ -9,10 +9,14 @@ class Node
         void setID(int);
         void setFather(Node*);
         void setNext(Node*);
+        void setTokenPresent(bool t);
+        void setRequestingCS(bool b);
 
         int getID();
-        Node getFather();
-        Node getNext();
+        Node* getFather();
+        Node* getNext();
+        bool getTokenPresent();
+        bool getRequestingCS();
         virtual ~Node();
 
     protected:
@@ -21,6 +25,8 @@ class Node
         int id;
         Node *father;
         Node *next;
+        bool tokenPresent;
+        bool requestingCS;
 };
 
 #endif // NODE_H
