@@ -11,10 +11,15 @@ class Node
         void setNext(Node*);
         void setTokenPresent(bool t);
         void setRequestingCS(bool b);
+<<<<<<< HEAD
         void setRequestCollectionBox(int r);
 
         int getID();
         int getRequestCollectionBox();
+=======
+
+        int getID();
+>>>>>>> 271ee151e52a018c578e91bfc07da48218e0dab8
         Node* getFather();
         Node* getNext();
         bool getTokenPresent();
